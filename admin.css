@@ -1,0 +1,239 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(135deg, #481ad3, #ff5e62);
+    color: #fff;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 0 20px 20px 0;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.85);
+    padding: 8px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.sidebar hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 15px 0;
+}
+
+/* Main Area */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Topbar */
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.topbar .logo {
+    font-size: 28px;
+    /* You can swap 🚀 🍳 📊 ✨ */
+}
+
+.search input {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    width: 200px;
+}
+
+.search input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.actions button {
+    padding: 6px 14px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.actions button:hover {
+    transform: scale(1.05);
+}
+
+/* Content Area */
+.content {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    margin-top: 10px;
+}
+
+/* Projects Section */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    padding: 15px;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Side Widgets */
+.side-widgets {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card.announcements {
+    background: rgba(255, 255, 255, 0.2);
+    /* frosted glass */
+    border-radius: 16px;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    /* fixed height */
+    overflow-y: auto;
+    /* scrollable content */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card.announcements h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card.announcements ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card.announcements li {
+    margin-bottom: 15px;
+}
+
+.card.trending {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    /* fixed height */
+    overflow-y: auto;
+    /* scroll inside */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card.trending h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card.trending ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card.trending li {
+    margin-bottom: 12px;
+}
+
+
+.card.trending {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    /* fixed height */
+    overflow-y: auto;
+    /* scroll inside */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card.trending h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card.trending ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card.trending li {
+    margin-bottom: 12px;
+}
